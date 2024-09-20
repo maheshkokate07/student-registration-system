@@ -8,10 +8,10 @@ addButton.addEventListener("click", addOrUpdateStudent);
 // Function for add or update the student.
 function addOrUpdateStudent() {     
 
-    const studentName = document.getElementById("student-name").value;
-    const studentId = document.getElementById("student-id").value;
-    const studentEmail = document.getElementById("student-email").value;
-    const studentContact = document.getElementById("student-contact").value;
+    const studentName = document.getElementById("student-name").value.trim();
+    const studentId = document.getElementById("student-id").value.trim();
+    const studentEmail = document.getElementById("student-email").value.trim();
+    const studentContact = document.getElementById("student-contact").value.trim();
 
     const alphaExp = /^[a-zA-Z]+$/;
 
