@@ -13,7 +13,7 @@ function addOrUpdateStudent() {
     const studentEmail = document.getElementById("student-email").value.trim();
     const studentContact = document.getElementById("student-contact").value.trim();
 
-    const alphaExp = /^[a-zA-Z]+$/;
+    const alphaExp = /^[A-Za-z\s]+$/;
 
     // Check user can only enter characters into name feild.
     if(!studentName.match(alphaExp)) {
