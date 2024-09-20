@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Student Registration System</title>
+</head>
+<body>
+    <Header>
+        <h1>
+            Student Registration System
+        </h1>
+        <p>
+            -This is a student registration system where you can add, view, edit or delete the user.
+        </p>
+    </Header>
+
+    <div class="main">
+        <div class="form-section">
+            <h2>Enter Student Details</h2>
+            <form>
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name">
+                <label for="student-id">Student ID</label>
+                <input type="number" id="student-id">
+                <label for="student-email">Student Email</label>
+                <input type="email" id="student-email">
+                <label for="student-contact">Contact No.</label>
+                <input type="number" id="student-contact">
+            </form>
+            <div class="button-container">
+                <button id="add-button">
+                    Add
+                </button>
+            </div>
+        </div>
+
+        <div class="display-section">
+            <h2>Student Records</h2>
+            <div class="heading">
+                <p>Name</p>
+                <p>ID</p>
+                <p>Email</p>
+                <p>Contact</p>
+            </div>
+            <div id="student-records">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
